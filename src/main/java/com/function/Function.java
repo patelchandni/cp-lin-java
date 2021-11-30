@@ -35,7 +35,7 @@ public class Function {
         final String name = request.getBody().orElse(query);
 
         if (name == null) {
-            return request.createResponseBuilder(HttpStatus.BAD_REQUEST).body("11/30 git defa ..... Please pass a name on the query string or in the request body").build();
+            return request.createResponseBuilder(HttpStatus.BAD_REQUEST).body("11/30 git rfp=1111111 ..... Please pass a name on the query string or in the request body").build();
         } else {
             return request.createResponseBuilder(HttpStatus.OK).body("Hello, " + name).build();
         }
